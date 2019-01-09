@@ -127,3 +127,6 @@ run: aliases
 	@echo "Starting a local web server for test"
 	@echo "It is accessible at: http://localhost:8000"
 	cd $(DST) && (python3 -m http.server --bind localhost 8000 || python -m SimpleHTTPServer 8000)
+
+deploy: all
+	cp -r files styles $(DST)
