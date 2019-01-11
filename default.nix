@@ -1,6 +1,4 @@
-{ pkgs ? (import <nixpkgs> {})
-, ocamlPackages ? pkgs.ocaml-ng.ocamlPackages_4_06
-}:
+{ pkgs ? (import <nixpkgs> {}) }:
 
 with pkgs;
 
@@ -11,7 +9,6 @@ stdenv.mkDerivation rec {
 
   buildInputs = [
     ocaml
-    python3
   ];
 
 }
