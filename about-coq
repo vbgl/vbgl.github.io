@@ -1,0 +1,188 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+
+<head>
+  <title>What is Coq? | The Coq Proof Assistant</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <link rel="shortcut icon" href="/files/coq_favicon.ico" type="image/x-icon" />
+  <link type="text/css" rel="stylesheet" media="all" href="/styles/barron/style.css" />
+  
+</head>
+
+<body>
+  <div id="container">
+
+    <div id="header">
+      <div id="nav">
+        <ul class="links">
+          <li><a href="/">Home</a></li>
+          <li><a href="/about-coq">About Coq</a></li>
+          <li><a href="/download">Get Coq</a></li>
+          <li><a href="/documentation">Documentation</a></li>
+          <li><a href="/community">Community</a></li>
+          <li><a href="/consortium">Consortium</a></li>
+          <li><a href="/news">News</a></li>
+        </ul>
+      </div><!-- /nav -->
+      <a href="https://github.com/coq/coq">
+          <img style="position: absolute; top: 0; right: 0; border: 0;"
+               src="/files/forkme.png"
+               alt="Fork me on GitHub" />
+      </a>
+      <div id="logo-wrapper">
+        <div id="logo">
+          <a href="/" title="Home"><img src="/files/barron_logo.png" alt="Home" /></a>
+        </div>
+        <h1 class="site-name"><a href="/" title="Home">The Coq Proof Assistant</a></h1>
+      </div><!-- /logo-wrapper-->
+    </div><!-- /header-->
+
+<div id="content">
+<div class="breadcrumb">
+
+<a href="/">Home</a>
+</div>
+<h2 class="page-title">What is Coq?</h2>
+<div class="node">
+
+
+<div class="content">
+
+
+
+
+<div class="framework">
+<div class="frameworklabel">Handling proofs and programs</div>
+<div class="frameworkcontent">
+
+<p>Coq implements a program specification and mathematical higher-level language called <em>Gallina</em> that is based on an expressive formal language called the <em>Calculus of Inductive Constructions</em> that itself combines both a higher-order logic and a richly-typed functional programming language. Through a <em>vernacular</em> language of commands, Coq allows:</p>
+
+    <ul>
+      <li>to define functions or predicates, that can be evaluated efficiently;</li>
+      <li>to state mathematical theorems and software specifications;</li>
+      <li>to interactively develop formal proofs of these theorems;</li>
+      <li>to machine-check these proofs by a relatively small certification "kernel";</li>
+      <li>to extract certified programs to languages like Objective Caml, Haskell or Scheme.</li>
+    </ul>
+
+   <p>As a proof development system, Coq provides interactive proof
+    methods, decision and semi-decision
+    algorithms, and a <em>tactic</em> language for letting the user define its own proof methods. Connection with external computer algebra system or theorem provers is available.</p>
+
+    <p> As a platform for the formalization of mathematics or the development of programs, Coq provides support for high-level notations, implicit contents and various other useful kinds of macros.</p>
+
+</div>
+
+<div class="frameworklinks">
+<ul>
+<li><a href="/a-short-introduction-to-coq">A short introduction to Coq</a></li>
+</ul>
+</div>
+
+</div>
+
+<div class="framework">
+<div class="frameworklabel">The Coq bundle</div>
+<div class="frameworkcontent">
+
+    <p> Coq comes with libraries for efficient arithmetics in N, Z and Q,
+    libraries about lists, finite sets and finite maps, libraries on
+    abstract sets, relations, classical analysis, etc.</p>
+
+    <p> Coq is released with:</p>
+      <ul>
+
+      <li>a graphical user interface based on gtk (CoqIDE) (<a
+    href="/refman/practical-tools/coqide.html">see the chapter of the reference manual about CoqIDE</a>),</li>
+      <li>documentation tools (<tt>coqdoc</tt> and <tt>coq-tex</tt>) and a statistics tool (<tt>coqwc</tt>),</li>
+      <li>dependency and makefile generation tools for Coq
+	(<tt>coq_makefile</tt> and <tt>coqdep</tt>),</li>
+      <li>a stand-alone proof verifier (<tt>coqchk</tt>).</li>
+      </ul>
+</div>
+
+<div class="frameworklinks">
+<ul>
+<li><a href="/download">Get Coq!</a></li>
+</ul>
+</div>
+
+</div>
+
+<div class="framework">
+<div class="frameworklabel">Credits</div>
+<div class="frameworkcontent">
+
+    <p>Coq is the result of about 30 years of research. It started in
+    1984 from an implementation of the Calculus of Constructions at
+    INRIA-Rocquencourt by Thierry Coquand and Gérard Huet. In 1991,
+    Christine Paulin extended it to the Calculus of Inductive
+    Constructions. All in all, about fifty people contributed to the development of
+    Coq features (see our <a
+    href="https://github.com/coq/coq/blob/V8.9.0/CREDITS">credits</a> file, the <a
+    href="/refman/credits.html">credits</a> chapter in the Coq
+    Reference Manual or the synthetic <a href="/who-did-what-in-coq">who did what</a> table).</p>
+
+    <p>The development is coordinated by the ADT Coq (Action for Technological Development), that gathers the teams involved in the implementation of the Coq Proof Assistant. The teams registered in the ADT are the <a href="http://www.inria.fr">INRIA</a> projects <a href="http://www.pps.univ-paris-diderot.fr/pi.r2/">πr²</a> and <a href="http://www-sop.inria.fr/marelle/">Marelle</a>, and the team <a href="http://cedric.cnam.fr/AfficheEquipe.php?id=7&amp;lang=fr">CPR</a> from <a href="http://www.cnam.fr">CNAM</a>.
+</p>
+
+
+    <p> Coq is written in the <a href="https://ocaml.org/index.fr.html">OCaml</a> language, with a bit of C. It is
+    distributed under the <a href="http://www.gnu.org/licenses/old-licenses/lgpl-2.1.html">GNU Lesser General Public Licence Version
+    2.1</a> (LGPL).</p>
+</div>
+</div>
+
+
+
+</div><!-- /content -->
+</div><!-- /node -->
+</div><!-- /content -->
+<div id="sidebar-wrapper">
+  <div id="sidebar">
+    <div id="block-aggregator-feed-1" class="clear-block block block-aggregator">
+      <h2 class="title">Recent news</h2>
+      <div class="content">
+        <div class="item-list">
+          <ul>
+<li><a href="/news/coq-890-is-out.html">Coq 8.9.0 is out</a></li>
+<li><a href="/news/coq-89beta1-is-out.html">Coq 8.9+beta1 is out</a></li>
+<li><a href="/news/coq-882-is-out.html">Coq 8.8.2 is out</a></li>
+
+          </ul>
+        </div>
+        <div class="more-link">
+          <a href="/news">more</a>
+        </div>
+      </div>
+    </div>
+    <div id="block-block-3" class="clear-block block block-block">
+      <div class="content">
+        <a href="/rss.xml">
+          <img src="/files/feed.png" alt="Syndicate content"
+          title="Syndicate content" width="16" height="16"
+          style="position:relative; top:5px" />&nbsp; Syndicate
+        </a>
+      </div>
+    </div>
+  </div><!-- /sidebar -->
+</div><!-- /sidebar-wrapper -->
+
+</div><!-- /container -->
+
+<div id="footer">
+  <div id="nav-footer">
+    <ul class="links-menu-footer">
+      <li><a href="mailto:coq-www@NOSPAM@inria.fr">webmaster</a></li>
+      <li><a href="http://validator.w3.org/">xhtml valid</a></li>
+      <li><a href="http://jigsaw.w3.org/css-validator/">CSS valid</a></li>
+    </ul>
+  </div>
+</div><!-- /footer -->
+
+</body>
+</html>
+

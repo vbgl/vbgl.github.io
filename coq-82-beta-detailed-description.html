@@ -1,0 +1,197 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+
+<head>
+  <title>Coq 8.2 beta (detailed description) | The Coq Proof Assistant</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <link rel="shortcut icon" href="/files/coq_favicon.ico" type="image/x-icon" />
+  <link type="text/css" rel="stylesheet" media="all" href="/styles/barron/style.css" />
+  
+</head>
+
+<body>
+  <div id="container">
+
+    <div id="header">
+      <div id="nav">
+        <ul class="links">
+          <li><a href="/">Home</a></li>
+          <li><a href="/about-coq">About Coq</a></li>
+          <li><a href="/download">Get Coq</a></li>
+          <li><a href="/documentation">Documentation</a></li>
+          <li><a href="/community">Community</a></li>
+          <li><a href="/consortium">Consortium</a></li>
+          <li><a href="/news">News</a></li>
+        </ul>
+      </div><!-- /nav -->
+      <a href="https://github.com/coq/coq">
+          <img style="position: absolute; top: 0; right: 0; border: 0;"
+               src="/files/forkme.png"
+               alt="Fork me on GitHub" />
+      </a>
+      <div id="logo-wrapper">
+        <div id="logo">
+          <a href="/" title="Home"><img src="/files/barron_logo.png" alt="Home" /></a>
+        </div>
+        <h1 class="site-name"><a href="/" title="Home">The Coq Proof Assistant</a></h1>
+      </div><!-- /logo-wrapper-->
+    </div><!-- /header-->
+
+<div id="content">
+<div class="breadcrumb">
+
+<a href="/">Home</a>
+</div>
+<h2 class="page-title">Coq 8.2 beta (detailed description)</h2>
+<div class="node">
+
+
+<div class="content">
+
+
+
+
+<p>The beta version of Coq 8.2 brings Haskell-style type classes, various
+evolutions of the arithmetic libraries, and many other various
+improvements and extensions regarding the module system, tactics,
+syntax, etc.</p>
+
+<p>The support for Haskell-style type classes has been contributed by
+M. Sozeau and is documented in <a
+href="/distrib/V8.2/refman//Reference-Manual024.html">chapter
+18</a> of the reference manual.</p>
+
+<p>The evolutions of the arithmetic libraries cover the following points:</p>
+<ul>
+  <li>
+  use of native arithmetic in the bytecode-based fast evaluator of Coq
+  (A. Spiwack),
+  </li>
+  <li>
+  new library on efficient 31-bits integer and word-based unbounded 
+  integers (L. Théry, B. Grégoire, A. Spiwack, P. Letouzey),
+  </li>
+  <li>
+  new library on axiomatic natural, cyclic and unbounded integer
+  numbers (E. Makarov),
+  </li>
+  <li>
+  new framework "micromega" for solving systems of inequalities in Z, Q, R,
+  possibly relying on external tools for non linear systems (F. Besson).
+  </li>
+</ul>
+
+<p>The <a
+href="/distrib/V8.2/refman//Reference-Manual007.html">module
+system</a> has been extended with the include feature, sharing of
+common submodules, functorial signature application and on-demand
+parameter inlining (E. Soubiran).</p>
+
+
+<p>At the level of tactics, Coq 8.2 offers a more efficient
+implementation of <a
+href="/distrib/V8.2/refman//Reference-Manual029.html">setoid
+rewrite</a>, new support for constant unfolding in apply, new <a
+href="/distrib/V8.2/refman//Reference-Manual011.html#@tactic84">dependent
+induction</a>, <a
+href="/distrib/V8.2/refman//Reference-Manual011.html#@tactic69">induction</a>/<a
+href="/distrib/V8.2/refman//Reference-Manual011.html#@tactic75">destruct</a>
+with "in" clause and "e" variants, support for <a
+href="/distrib/V8.2/refman//Reference-Manual011.html#@tactic94">iteration
+and "at" clause in rewrite</a>, new variants of <a
+href="/distrib/V8.2/refman//Reference-Manual011.html#@tactic82">introduction
+patterns</a>, support for implicit contents and coercions in the
+"with" clauses, use of type informations in unification (P. Letouzey,
+M. Sozeau, S. Glondu, E. Makarov, H. Herbelin). The mathematical proof
+language is documented in <a
+href="/distrib/V8.2/refman//Reference-Manual014.html">chapter
+11</a> of the reference manual (P. Corbineau).</p>
+
+<p>Coq 8.2 also offers miscellaneous syntax extensions and improved
+features: <a href="/distrib/V8.2/refman//Reference-Manual004.html#@default69">destructing let</a>, better type inference,
+inference of matching return clause, detection of impossible clause in
+dependent pattern-matching, detection of decreasing argument in
+fixpoints, improved <a href="/distrib/V8.2/refman//Reference-Manual027.html">Program</a> and <a href="/distrib/V8.2/refman//Reference-Manual004.html#toc15">Function</a>
+features, new ways to work with <a href="/distrib/V8.2/refman//Reference-Manual004.html#toc19">implicit arguments</a>, and
+various other auxiliary features (M. Sozeau, P. Letouzey,
+H. Herbelin). It also provides automatic generation of decidable
+equality (V. Siles).</p>
+
+<p>Finally, Coq comes with a new stand-alone <a
+href="/distrib/V8.2/refman//Reference-Manual017.html#toc89">checker</a>
+for cross-certification of vo-files (B. Barras).</p>
+
+<p>For all other changes, see the <a href="/distrib/V8.2/CHANGES">CHANGES</a> file.</p>
+
+<p>As far as we could judge, the major sources of incompatibilities come
+from the new implementation of setoid rewrite and, marginally, from
+the support of constant unfolding in apply. A secondary source comes
+from some bug fixes and from changes in specific libraries. See the <a
+href="/distrib/V8.2/COMPATIBILITY">COMPATIBILITY</a> file for details and smooth
+migration recommendations. We are interested in feedback on the
+upgrading problems that may be encountered.</p>
+
+<p>The documentation is available <a href="/refman/">online</a>.</p>
+
+<p>If a bug is not already listed there, submit a
+new one on the <a href="/bugs/">bug
+tracker</a>. General questions or remarks can be sent to
+coq-club(a)inria.fr.</p>
+
+<p>A few changes in the Objective Caml interfaces of Coq are
+documented in the file dev/doc/changes.txt of Coq source archive.</p>
+
+
+The Coq development team
+
+
+
+</div><!-- /content -->
+</div><!-- /node -->
+</div><!-- /content -->
+<div id="sidebar-wrapper">
+  <div id="sidebar">
+    <div id="block-aggregator-feed-1" class="clear-block block block-aggregator">
+      <h2 class="title">Recent news</h2>
+      <div class="content">
+        <div class="item-list">
+          <ul>
+<li><a href="/news/coq-890-is-out.html">Coq 8.9.0 is out</a></li>
+<li><a href="/news/coq-89beta1-is-out.html">Coq 8.9+beta1 is out</a></li>
+<li><a href="/news/coq-882-is-out.html">Coq 8.8.2 is out</a></li>
+
+          </ul>
+        </div>
+        <div class="more-link">
+          <a href="/news">more</a>
+        </div>
+      </div>
+    </div>
+    <div id="block-block-3" class="clear-block block block-block">
+      <div class="content">
+        <a href="/rss.xml">
+          <img src="/files/feed.png" alt="Syndicate content"
+          title="Syndicate content" width="16" height="16"
+          style="position:relative; top:5px" />&nbsp; Syndicate
+        </a>
+      </div>
+    </div>
+  </div><!-- /sidebar -->
+</div><!-- /sidebar-wrapper -->
+
+</div><!-- /container -->
+
+<div id="footer">
+  <div id="nav-footer">
+    <ul class="links-menu-footer">
+      <li><a href="mailto:coq-www@NOSPAM@inria.fr">webmaster</a></li>
+      <li><a href="http://validator.w3.org/">xhtml valid</a></li>
+      <li><a href="http://jigsaw.w3.org/css-validator/">CSS valid</a></li>
+    </ul>
+  </div>
+</div><!-- /footer -->
+
+</body>
+</html>
+

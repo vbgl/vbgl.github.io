@@ -1,0 +1,161 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+
+<head>
+  <title>V8.4 | The Coq Proof Assistant</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <link rel="shortcut icon" href="/files/coq_favicon.ico" type="image/x-icon" />
+  <link type="text/css" rel="stylesheet" media="all" href="/styles/barron/style.css" />
+  
+</head>
+
+<body>
+  <div id="container">
+
+    <div id="header">
+      <div id="nav">
+        <ul class="links">
+          <li><a href="/">Home</a></li>
+          <li><a href="/about-coq">About Coq</a></li>
+          <li><a href="/download">Get Coq</a></li>
+          <li><a href="/documentation">Documentation</a></li>
+          <li><a href="/community">Community</a></li>
+          <li><a href="/consortium">Consortium</a></li>
+          <li><a href="/news">News</a></li>
+        </ul>
+      </div><!-- /nav -->
+      <a href="https://github.com/coq/coq">
+          <img style="position: absolute; top: 0; right: 0; border: 0;"
+               src="/files/forkme.png"
+               alt="Fork me on GitHub" />
+      </a>
+      <div id="logo-wrapper">
+        <div id="logo">
+          <a href="/" title="Home"><img src="/files/barron_logo.png" alt="Home" /></a>
+        </div>
+        <h1 class="site-name"><a href="/" title="Home">The Coq Proof Assistant</a></h1>
+      </div><!-- /logo-wrapper-->
+    </div><!-- /header-->
+
+<div id="content">
+<div class="breadcrumb">
+
+<a href="/">Home</a>
+</div>
+<h2 class="page-title">V8.4</h2>
+<div class="node">
+
+
+<div class="content">
+
+
+
+
+<div class="framework">
+<div class="frameworklabel">The forthcoming version: Coq 8.4
+</div>
+<div class="frameworkcontent">
+
+Coq 8.4 is available in <a href="/distrib/V8.4beta">beta</a> testing. It features:
+
+<ul>
+<li> a new modular and uniform extension of the arithmetical libraries by
+  P. Letouzey which systematically provides power, gcd/lcm, square
+  root, base 2 logarithm, division, modulo, bitwise operators, logical
+  shift, comparisons, iterators on top of a uniform naming layer
+  (e.g. plus and mult are now consistently named add and mul while
+  still remaining mostly compatible with 8.3);</li>
+<li> a new proof engine by A. Spiwack whose most salient feature is the
+  introduction of bullets (+, -, *) and structured scripts ({ ... }).</li>
+</ul>
+
+The main other changes are:
+
+<ul>
+<li> addition of eta-conversion to the logic;</li>
+<li> a slightly more flexible guard condition for fixpoints;</li>
+<li> a more systematic support for pattern-matching on dependent types;</li>
+<li> more robust CoqIDE (including a new communication protocol by V. Gross);</li>
+<li> a new library of "vectors" (lists of a given length);</li>
+<li> support for referring to expressions of the goal using pattern in tactics;</li>
+<li> automatic computation of occurrences to abstract over in destruct/induction;</li>
+<li> various improvements to Ltac (timeout, eq_constr, is_evar, has_evar,
+  timeout, generic "match _ with _ => _ end" pattern);</li>
+<li> implicit arguments in anonymous functions;</li>
+<li> notations with binders (e.g. "exists x y z, P");</li>
+<li> many bug fixes and improvements of existing features (type classes,
+  setoid rewriting, nsatz, micromega, extraction, Function, module
+  system, coq_makefile, ...);</li>
+</ul>
+  <p>For a full log of changes,
+see the file <a href="/distrib/V8.4beta/CHANGES">
+CHANGES</a>.</p>
+
+  <p>Coq 8.4 is not entirely upward compatible with 8.3. Please report manifest regressions not mentioned in the CHANGES file.</p>
+
+<table class="downloadtable">
+  <tr><td colspan="3" rowspan="1" class="downloadheader">Sources</td></tr>
+  <tr>
+    <td class="downloadcategory"><a name="src"></a></td>
+    <td class="downloadlink, downloadback"><a href="/distrib/V8.4beta/files/coq-8.4beta.tar.gz">coq-8.4beta.tar.gz</a>
+    </td>
+    <td>3.7 MB</td>
+  </tr>
+</table>
+
+On Linux, BSD or MacOS package-based distributions, Coq is released by the corresponding maintainers. For reports on the Windows package and the MacOS <code>dmg</code> packages, use the <a href="/bugs/">Coq bug tracker</a>.
+
+</div>
+</div>
+
+
+
+</div><!-- /content -->
+</div><!-- /node -->
+</div><!-- /content -->
+<div id="sidebar-wrapper">
+  <div id="sidebar">
+    <div id="block-aggregator-feed-1" class="clear-block block block-aggregator">
+      <h2 class="title">Recent news</h2>
+      <div class="content">
+        <div class="item-list">
+          <ul>
+<li><a href="/news/coq-890-is-out.html">Coq 8.9.0 is out</a></li>
+<li><a href="/news/coq-89beta1-is-out.html">Coq 8.9+beta1 is out</a></li>
+<li><a href="/news/coq-882-is-out.html">Coq 8.8.2 is out</a></li>
+
+          </ul>
+        </div>
+        <div class="more-link">
+          <a href="/news">more</a>
+        </div>
+      </div>
+    </div>
+    <div id="block-block-3" class="clear-block block block-block">
+      <div class="content">
+        <a href="/rss.xml">
+          <img src="/files/feed.png" alt="Syndicate content"
+          title="Syndicate content" width="16" height="16"
+          style="position:relative; top:5px" />&nbsp; Syndicate
+        </a>
+      </div>
+    </div>
+  </div><!-- /sidebar -->
+</div><!-- /sidebar-wrapper -->
+
+</div><!-- /container -->
+
+<div id="footer">
+  <div id="nav-footer">
+    <ul class="links-menu-footer">
+      <li><a href="mailto:coq-www@NOSPAM@inria.fr">webmaster</a></li>
+      <li><a href="http://validator.w3.org/">xhtml valid</a></li>
+      <li><a href="http://jigsaw.w3.org/css-validator/">CSS valid</a></li>
+    </ul>
+  </div>
+</div><!-- /footer -->
+
+</body>
+</html>
+

@@ -1,0 +1,268 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+
+<head>
+  <title>Coq 8.6 | The Coq Proof Assistant</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <link rel="shortcut icon" href="/files/coq_favicon.ico" type="image/x-icon" />
+  <link type="text/css" rel="stylesheet" media="all" href="/styles/barron/style.css" />
+  
+</head>
+
+<body>
+  <div id="container">
+
+    <div id="header">
+      <div id="nav">
+        <ul class="links">
+          <li><a href="/">Home</a></li>
+          <li><a href="/about-coq">About Coq</a></li>
+          <li><a href="/download">Get Coq</a></li>
+          <li><a href="/documentation">Documentation</a></li>
+          <li><a href="/community">Community</a></li>
+          <li><a href="/consortium">Consortium</a></li>
+          <li><a href="/news">News</a></li>
+        </ul>
+      </div><!-- /nav -->
+      <a href="https://github.com/coq/coq">
+          <img style="position: absolute; top: 0; right: 0; border: 0;"
+               src="/files/forkme.png"
+               alt="Fork me on GitHub" />
+      </a>
+      <div id="logo-wrapper">
+        <div id="logo">
+          <a href="/" title="Home"><img src="/files/barron_logo.png" alt="Home" /></a>
+        </div>
+        <h1 class="site-name"><a href="/" title="Home">The Coq Proof Assistant</a></h1>
+      </div><!-- /logo-wrapper-->
+    </div><!-- /header-->
+
+<div id="content">
+<div class="breadcrumb">
+
+<a href="/">Home</a>
+</div>
+<h2 class="page-title">Coq 8.6</h2>
+<div class="node">
+
+
+<div class="content">
+
+
+
+
+<div class="framework">
+<div class="frameworklabel">Coq 8.6.1
+</div>
+<div class="frameworkcontent">
+
+  <p>This version features:</p>
+
+<ul>
+  <li>A new, faster state-of-the-art universe constraint checker by
+    Jacques-Henri Jourdan.</li>
+  <li>In CoqIDE and other asynchronous interfaces, more fine-grained
+  asynchronous processing and error reporting by Enrico Tassi, making Coq
+  capable of recovering from errors and continuing to process the document.</li>
+  <li>Better access to the proof engine features from Ltac: goal
+    management primitives, range selectors and a <tt>typeclasses
+      eauto</tt> engine handling multiple goals and multiple successes, by
+    Cyprien Mangin, Matthieu Sozeau and Arnaud Spiwack.</li>
+  <li>Tactic behavior uniformization and specification, generalization
+    of intro-patterns by Hugo Herbelin and others.</li>
+  <li>A brand new warning system allowing to control warnings, turn them
+  into errors or ignore them selectively by Maxime Dénès, Guillaume
+  Melquiond, Pierre-Marie Pédrot and others.</li>
+  <li>Irrefutable patterns in abstractions, by Daniel de Rauglaudre.</li>
+  <li>The ssreflect subterm selection algorithm by Georges Gonthier and
+  Enrico Tassi, now accessible to tactic writers through the ssrmatching
+  plugin.</li>
+  <li>LtacProf, a profiler for Ltac by Jason Gross, Paul Steckler, Enrico Tassi
+    and Tobias Tebbi.</li>
+</ul>
+
+<p>A lot of other changes are described in the
+<a href="/distrib/V8.6.1/CHANGES">CHANGES file</a>.</p>
+
+<p>Coq 8.6 initiates a time-based release cycle, with a major version being
+released every 10 months.
+<a href="https://github.com/coq/roadmaps/blob/master/text/roadmap-8.6.md">The
+roadmap</a> is also made public.</p>
+
+<p>To date, Coq 8.6 contains more external contributions than any previous
+Coq version. Code reviews were systematically done before integration of
+new features, with an important focus given to compatibility and performance
+issues.</p>
+
+<p><a href="https://github.com/coq/ceps">Coq Enhancement Proposals</a>
+(CEPs for short) were introduced by Enrico Tassi to provide more visibility
+and a discussion period on new features.</p>
+
+<table class="downloadtable">
+  <tr><td colspan="3" rowspan="1" class="downloadheader">Sources</td></tr>
+  <tr>
+    <td class="downloadcategory"><a name="src"></a></td>
+    <td class="downloadlink downloadback"><a href="/distrib/V8.6.1/files/coq-8.6.1.tar.gz">coq-8.6.1.tar.gz</a>
+    </td>
+    <td class="downloadsize"><div>5.3 MB</div></td>
+  </tr>
+
+  <tr><td colspan="3" rowspan="1" class="downloadheader">Binaries</td></tr>
+  <tr>
+    <td class="downloadcategory downloadbottomback"><a
+      name="win"></a><img src="/files/OSlogos/windows_logo.png"
+      width="30" height="30" style="vertical-align:middle; display: block;
+      margin: 0 auto" alt="windows" /><div>Windows</div>
+    </td>
+
+    <td class="downloadlink downloadbottomline"><a
+      href="/distrib/V8.6.1/files/coq-installer-8.6.1-i686.exe">
+      coq-installer-8.6.1-i686.exe</a> (32 bits, bundled with CoqIDE, compiled
+      using OCaml 4.02.3 and Camlp5 6.14)
+    </td>
+
+    <td class="downloadsize downloadbottomback">82 MB</td>
+  </tr>
+
+  <tr>
+    <td class="downloadcategory downloadbottomback"><a
+      name="win"></a><img src="/files/OSlogos/windows_logo.png"
+      width="30" height="30" style="vertical-align:middle; display: block;
+      margin: 0 auto" alt="windows" /><div>Windows</div>
+    </td>
+
+    <td class="downloadlink downloadbottomline"><a
+      href="/distrib/V8.6.1/files/coq-installer-8.6.1-x86_64.exe">
+      coq-installer-8.6.1-x86_64.exe</a> (64 bits, bundled with CoqIDE, compiled
+      using OCaml 4.02.3 and Camlp5 6.14)
+    </td>
+
+    <td class="downloadsize downloadbottomback">83 MB</td>
+  </tr>
+
+
+  
+  <tr>
+    <td class="downloadcategory downloadbottomline"><a
+      name="macos"></a><img src="/files/OSlogos/macos_logo.jpg"
+      width="30" height="30" style="vertical-align:middle; display: block;
+      margin: 0 auto" alt="macos" /><div>MacOS</div>
+    </td>
+    
+    <td class="downloadlink downloadbottomback">
+    <a href="/distrib/V8.6.1/files/CoqIDE_8.6.1.dmg">
+      CoqIDE_8.6.1.dmg</a> (bundled with CoqIDE, compiled using OCaml 4.02.3 and
+      Camlp5 6.14)
+    </td>
+    <td class="downloadsize downloadbottomline">109 MB</td>
+  </tr>
+
+  <tr><td colspan="3" rowspan="1" class="downloadheader">Documentation</td></tr>
+  
+  <tr>
+    <td class="downloadcategory downloadbottomback" rowspan="2"></td>
+    <td class="downloadlink downloadbottomline"><a href="/distrib/V8.6.1/files/Reference-Manual.pdf">
+      Reference-Manual.pdf</a> (also <a href="/distrib/V8.6.1/refman">online</a>)
+    </td>
+    <td class="downloadsize downloadbottomback">1.7 MB</td>
+  </tr>
+
+  <tr>
+    <td class="downloadlink downloadbottomline">
+    <a href="/distrib/V8.6.1/stdlib">Standard Library</a> online documentation
+    </td>
+    <td class="downloadsize downloadbottomback"></td>
+  </tr>
+
+  <tr><td colspan="3" rowspan="1" class="downloadheader">Misc</td></tr>
+  <tr>
+    <td class="downloadcategory downloadbottomback"><a
+      name="win"></a><img src="/files/OSlogos/windows_logo.png"
+      width="30" height="30" style="vertical-align:middle; display: block;
+      margin: 0 auto" alt="windows" /><div>Windows</div>
+    </td>
+
+    <td class="downloadlink downloadbottomline"><a
+      href="/distrib/V8.6.1/files/coq-opensource-archive-i686.zip">
+      coq-opensource-archive-i686.zip</a> (sources of the files installed by
+      the 32 bit Windows installer, to comply with license requirements)
+    </td>
+
+    <td class="downloadsize downloadbottomback">262 MB</td>
+  </tr>
+
+  <tr>
+    <td class="downloadcategory downloadbottomback"><a
+      name="win"></a><img src="/files/OSlogos/windows_logo.png"
+      width="30" height="30" style="vertical-align:middle; display: block;
+      margin: 0 auto" alt="windows" /><div>Windows</div>
+    </td>
+
+    <td class="downloadlink downloadbottomline"><a
+      href="/distrib/V8.6.1/files/coq-opensource-archive-x86_64.zip">
+      coq-opensource-archive-x86_64.zip</a> (sources of the files installed by
+      the 64 bit Windows installer, to comply with license requirements)
+    </td>
+
+    <td class="downloadsize downloadbottomback">262 MB</td>
+  </tr>
+
+
+</table>
+
+</div><!-- frameworkcontent -->
+</div><!-- framework -->
+
+
+
+</div><!-- /content -->
+</div><!-- /node -->
+</div><!-- /content -->
+<div id="sidebar-wrapper">
+  <div id="sidebar">
+    <div id="block-aggregator-feed-1" class="clear-block block block-aggregator">
+      <h2 class="title">Recent news</h2>
+      <div class="content">
+        <div class="item-list">
+          <ul>
+<li><a href="/news/coq-890-is-out.html">Coq 8.9.0 is out</a></li>
+<li><a href="/news/coq-89beta1-is-out.html">Coq 8.9+beta1 is out</a></li>
+<li><a href="/news/coq-882-is-out.html">Coq 8.8.2 is out</a></li>
+
+          </ul>
+        </div>
+        <div class="more-link">
+          <a href="/news">more</a>
+        </div>
+      </div>
+    </div>
+    <div id="block-block-3" class="clear-block block block-block">
+      <div class="content">
+        <a href="/rss.xml">
+          <img src="/files/feed.png" alt="Syndicate content"
+          title="Syndicate content" width="16" height="16"
+          style="position:relative; top:5px" />&nbsp; Syndicate
+        </a>
+      </div>
+    </div>
+  </div><!-- /sidebar -->
+</div><!-- /sidebar-wrapper -->
+
+</div><!-- /container -->
+
+<div id="footer">
+  <div id="nav-footer">
+    <ul class="links-menu-footer">
+      <li><a href="mailto:coq-www@NOSPAM@inria.fr">webmaster</a></li>
+      <li><a href="http://validator.w3.org/">xhtml valid</a></li>
+      <li><a href="http://jigsaw.w3.org/css-validator/">CSS valid</a></li>
+    </ul>
+  </div>
+</div><!-- /footer -->
+
+</body>
+</html>
+

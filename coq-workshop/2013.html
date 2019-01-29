@@ -1,0 +1,359 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+
+<head>
+  <title>The Coq Workshop 2013 | The Coq Proof Assistant</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <link rel="shortcut icon" href="/files/coq_favicon.ico" type="image/x-icon" />
+  <link type="text/css" rel="stylesheet" media="all" href="/styles/barron/style.css" />
+  
+</head>
+
+<body>
+  <div id="container">
+
+    <div id="header">
+      <div id="nav">
+        <ul class="links">
+          <li><a href="/">Home</a></li>
+          <li><a href="/about-coq">About Coq</a></li>
+          <li><a href="/download">Get Coq</a></li>
+          <li><a href="/documentation">Documentation</a></li>
+          <li><a href="/community">Community</a></li>
+          <li><a href="/consortium">Consortium</a></li>
+          <li><a href="/news">News</a></li>
+        </ul>
+      </div><!-- /nav -->
+      <a href="https://github.com/coq/coq">
+          <img style="position: absolute; top: 0; right: 0; border: 0;"
+               src="/files/forkme.png"
+               alt="Fork me on GitHub" />
+      </a>
+      <div id="logo-wrapper">
+        <div id="logo">
+          <a href="/" title="Home"><img src="/files/barron_logo.png" alt="Home" /></a>
+        </div>
+        <h1 class="site-name"><a href="/" title="Home">The Coq Proof Assistant</a></h1>
+      </div><!-- /logo-wrapper-->
+    </div><!-- /header-->
+
+<div id="content">
+<div class="breadcrumb">
+
+<a href="/">Home</a>
+</div>
+<h2 class="page-title">The Coq Workshop 2013</h2>
+<div class="node">
+
+
+<div class="content">
+
+
+
+
+<h2>The 5th Coq Workshop</h2>
+<h3>A satellite workshop of <a href="http://itp2013.inria.fr/">ITP 2013</a>, Rennes, July 22nd</h3>
+
+<p>
+The Coq Workshop series brings together Coq users, developers, and contributors. While conferences like ITP provide a venue for traditional research papers, the Coq Workshop focuses on strengthening the Coq community and providing a forum for discussing practical issues, including the future of the Coq software and its associated ecosystem of libraries and tools. Thus, the workshop will be organized around informal presentations and discussions, supplemented with invited talks.
+
+The program features two invited talks by Guillaume Melquiond and Bas Spitters. Bas Spitters' participation is funded by the European Commission FP7, STREP project ForMath, n. 243847.
+
+</p>
+
+<h2>Program</h2>
+
+<h3>Sunday 21</h3>
+
+<table style="width: 80%; margin-left: 3em; margin-right: 3em">
+<tr>
+    <th style="width: 20%; padding-right: 2em">Time</th>
+    <th style="width: 80%; padding-right: 1em">Activity</th></tr>
+<tr>
+  <td>18:30 - 20:00</td><td>Welcome drinks reception at
+   Le café des Camps libres, 10 Cours des Alliés, 35000 Rennes.</td>
+</tr>
+</table>
+
+<p>
+The local organizers provide a 
+<a href="/files/reception.pdf">map
+showing the way</a> from the railway station (A) to Le café des
+Champs libres (B)
+</p>
+
+<h3>Monday 22</h3>
+
+<p>
+The workshop will take place at INRIA Rennes-Bretagne-Atlantique, on the university campus (called "Campus de Beaulieu"), in the east of Rennes. See <a href="http://itp2013.inria.fr/venue.html#where">here</a> the practical informations provided by the local organizers.
+</p>
+<table style="width: 80%; margin-left: 3em; margin-right: 3em">
+<tr>
+    <th style="width: 20%; padding-right: 2em">Time</th>
+    <th style="width: 30%; padding-right: 1em">Author</th>
+    <th style="width: 50%">Title</th></tr>
+<tr>
+  <td>09:00 - 10:00</td>
+  <td>Guillaume Melquiond</td>
+  <td><a href="#Melquiond">Automations for verifying floating-point algorithms</a></td>
+</tr>
+<tr>
+  <td>10:00 - 10:30</td>
+  <td>Coffee</td>
+  <td></td>
+</tr>
+<tr>
+  <td>10:30 - 11:00</td>
+  <td>Catherine Lelay</td>
+  <td><a href="#Lelay">A New Formalization of Power Series in Coq</a></td>
+</tr>
+<tr>
+  <td>11:00 - 11:30</td>
+  <td>Reynald&nbsp;Affeldt and Kazuhiko&nbsp;Sakaguchi</td>
+  <td><a href="#Affeldt">First Building Blocks For Implementations of Security Protocols Verified in Coq</a></td>
+</tr>
+<tr>
+  <td>11:30 - 12:00</td>
+  <td>Michael Nahas</td>
+  <td><a href="#Nahas">A Decentralized Proof-term Library for Coq</a></td>
+</tr>
+
+<tr>
+  <td>12:00 - 13:45</td>
+  <td>Lunch</td>
+  <td></td>
+</tr>
+
+<tr>
+  <td>13:45  - 14:45</td>
+  <td>Bas Spitters</td>
+  <td><a href="#Spitters">Formalizing mathematics in homotopy type theory</a></td>
+</tr>
+
+<tr>
+  <td>14:45 - 15:00</td>
+  <td>Break</td>
+  <td></td>
+</tr>
+
+<tr>
+  <td>15:00 - 15:30</td>
+  <td>Yves Bertot</td>
+  <td><a href="#Bertot">Private Inductive Types</a></td>
+</tr>
+<tr>
+  <td>15:30 - 16:00</td>
+  <td>Jorge&nbsp;Luis Sacchini and Bruno&nbsp;Barras</td>
+  <td><a href="#Sacchini">Type-Based Methods for Termination and Productivity in Coq</a></td>
+</tr>
+
+<tr>
+  <td>16:00 - 16:30</td>
+  <td>Coffee</td>
+  <td></td>
+</tr>
+
+<tr>
+  <td>16:30 - 17:00</td>
+  <td>Maxime Dénès</td>
+  <td><a href="#Denes">Towards primitive data types for Coq: 63-bits integers and persistent arrays</a></td>
+</tr>
+
+<tr>
+  <td>17:00 - 17:30</td>
+  <td>Coq development team</td>
+  <td><a href="#Coq">invited talk</a></td>
+</tr>
+
+</table>
+
+<h2>Abstracts and slides</h2>
+
+
+<div style="margin-top: 1em"><a style="font-style:italic" name="Melquiond">Guillaume Melquiond</a>: Automations for verifying floating-point algorithms
+Abstract: 
+<span style="text-align: justify; text-justify: newspaper; display: block; margin-left: 2em; margin-right: 2em;">
+Floating-point numbers are limited both in range and in precision, yet
+they are widely used as a way to implement computations on real numbers.
+Thus arithmetic operations cause small errors that might be amplified
+during subsequent computations. As such, it is important to guarantee
+that the computed values are still close enough to the ideal results.
+The traditional way to tackle the verification of such programs is to
+perform an error analysis, possibly using automated tools.
+
+Unfortunately, when it comes to the low-level floating-point functions
+found in mathematical libraries, the code is usually so contrived that
+this approach falls short. Falling back to a pen-and-paper proof makes
+it possible to verify such functions, but this process is long, tedious,
+and error-prone. Formal proofs take care of that last point, but they
+come at an even greater cost for the user. Thus one needs to recover
+some automations inside proof assistants to ease the verification
+process.
+
+This talk will present an overview of some of the methods available for
+the Coq proof assistant. In particular, it will focus on Gappa and some
+other interval-based automations. The presentation will not really be
+about the inner workings of these methods, but rather show how they can
+be used in practice to verify some floating-point algorithms in Coq.
+</span>
+Slides: <!-- <a href="/files/coq5_slide_invited_1.pdf">Download</a> -->
+</div>
+
+<div style="margin-top: 1em"><a style="font-style:italic" name="Lelay">Catherine Lelay</a>: A New Formalization of Power Series in Coq
+Abstract: <a href="/files/coq5_submission_1.pdf">Pdf</a>
+Slides: <a href="/files/coq5-slides-lelay.pdf">Download</a>
+</div>
+
+<div style="margin-top: 1em"><a style="font-style:italic" name="Affeldt">Reynald Affeldt and Kazuhiko Sakaguchi</a>: First Building Blocks For Implementations of Security Protocols Verified in Coq
+Abstract: <a href="/files/coq5_submission_4.pdf">Pdf</a>
+Slides: <a href="/files/coq5-slides-affesaka.pdf">Download</a>
+</div>
+
+<div style="margin-top: 1em"><a style="font-style:italic" name="Nahas">Michael Nahas</a>: A Decentralized Proof-term Library for Coq
+Abstract: <a href="/files/coq5_submission_6.pdf">Pdf</a>
+Slides: <a href="/files/Coq5-slides-nahas.pdf">Download</a>
+</div>
+
+<div style="margin-top: 1em"><a style="font-style:italic" name="Spitters">Bas Spitters</a>: Formalizing mathematics in homotopy type theory
+
+Abstract: 
+<span style="text-align: justify; text-justify: newspaper; display: block; margin-left: 2em; margin-right: 2em;">
+I will discuss some of the exciting developments in homotopy type theory
+as presented in the book on the topic, as well as give a short overview of
+some parts of the Coq library.
+</span>
+Slides: <a href="/files/coq5-slides-spitters.pdf">Download</a>
+</div>
+
+<div style="margin-top: 1em"><a style="font-style:italic" name="Bertot">Yves Bertot</a>: Private Inductive Types
+Abstract: <a href="/files/coq5_submission_3.pdf">Pdf</a>
+Slides: <a href="/files/coq5-slides-bertot.pdf">Download</a>
+</div>
+
+<div style="margin-top: 1em"><a style="font-style:italic" name="Sacchini">Jorge Luis Sacchini and Bruno Barras</a>: Type-Based Methods for Termination and Productivity in Coq
+Abstract: <a href="/files/coq5_submission_5.pdf">Pdf</a>
+Slides: <a href="/files/coq5-slides-sacchini.pdf">Download</a>
+</div>
+
+<div style="margin-top: 1em"><a style="font-style:italic" name="Denes">Maxime Dénès</a>: Towards primitive data types for Coq: 63-bits integers and persistent arrays
+Abstract: <a href="/files/coq5_submission_2.pdf">Pdf</a>
+Slides: <a href="/files/coq5-slides-denes.pdf">Download</a>
+</div>
+
+<div style="margin-top: 1em"><a style="font-style:italic" name="Coq">Coq development team</a>: invited talk
+Abstract:
+Slides: <a href="/files/coq5-slides-herbelin.pdf">Download</a>
+</div>
+
+
+<h2>Call</h2>
+<p>Sent on the coq-club, types-announce, caml-list and ssreflect mailing lists
+on Feb 07, Mar 29 and Apr 5 (last call).  Text follows.</p>
+<pre>
+Subject: Call for proposals: The 5th Coq Workshop
+
+================================================================================
+The Fifth Coq Workshop (2013)
+http://coq.inria.fr/coq-workshop/2013
+Colocated with the 4rd International Conference on Interactive Theorem 
+Proving (ITP 2013), Rennes, France
+================================================================================
+
+The Coq Workshop series brings together Coq users, developers, and 
+contributors.  While conferences like ITP provide a venue for 
+traditional research papers, the Coq Workshop focuses on strengthening 
+the Coq community and providing a forum for discussing practical issues, 
+including the future of the Coq software and its associated ecosystem of 
+libraries and tools.  Thus, the workshop will be organized around 
+informal presentations and discussions, likely supplemented with invited 
+talks.
+
+We invite all members of the Coq community to propose informal talks, 
+discussion sessions, or any potential uses of the day allocated to the 
+workshop.  Relevant subject matter includes but is not limited to:
+
+     * Language or tactic features
+     * Theory and implementation of the Calculus of Inductive Constructions
+     * Applications and experience in education and industry
+     * Tools and platforms built on Coq
+     * Plugins and libraries for Coq
+     * Interfacing with Coq
+     * Formalization tricks and Coq pearls
+
+Authors should submit short proposals through EasyChair.  Submissions 
+should be in portable document format (PDF).  Proposals should not 
+exceed 2 pages in length in single-column full-page style.
+
+Venue: ITP, Rennes.
+Important Dates:
+
+     * April 7: Deadline for proposal submission
+     * April 28: Acceptance notification
+     * July 22: Workshop in Rennes
+
+Submission URL: https://www.easychair.org/conferences/?conf=coq5
+Program committee: 
+
+     * Pierre Letouzey,	Université Paris 7, France
+     * Marco Maggesi, Università degli Studi di Firenze, Italy
+     * Assia Mahboubi (co-chair), INRIA, France
+     * David Pichardie, INRIA, France
+     * Benjamin	Pierce, University of Pennsylvania, USA
+     * Randy Pollack, University of Edinburgh, UK
+     * Enrico Tassi (co-chair), INRIA, France
+     * Viktor Vafeiadis, MPI-SWS, Germany	
+
+Contact: Assia Mahboubi (assia.mahboubi@inria.fr), Enrico Tassi (enrico.tassi@inria.fr)
+</pre>
+
+
+
+</div><!-- /content -->
+</div><!-- /node -->
+</div><!-- /content -->
+<div id="sidebar-wrapper">
+  <div id="sidebar">
+    <div id="block-aggregator-feed-1" class="clear-block block block-aggregator">
+      <h2 class="title">Recent news</h2>
+      <div class="content">
+        <div class="item-list">
+          <ul>
+<li><a href="/news/coq-890-is-out.html">Coq 8.9.0 is out</a></li>
+<li><a href="/news/coq-89beta1-is-out.html">Coq 8.9+beta1 is out</a></li>
+<li><a href="/news/coq-882-is-out.html">Coq 8.8.2 is out</a></li>
+
+          </ul>
+        </div>
+        <div class="more-link">
+          <a href="/news">more</a>
+        </div>
+      </div>
+    </div>
+    <div id="block-block-3" class="clear-block block block-block">
+      <div class="content">
+        <a href="/rss.xml">
+          <img src="/files/feed.png" alt="Syndicate content"
+          title="Syndicate content" width="16" height="16"
+          style="position:relative; top:5px" />&nbsp; Syndicate
+        </a>
+      </div>
+    </div>
+  </div><!-- /sidebar -->
+</div><!-- /sidebar-wrapper -->
+
+</div><!-- /container -->
+
+<div id="footer">
+  <div id="nav-footer">
+    <ul class="links-menu-footer">
+      <li><a href="mailto:coq-www@NOSPAM@inria.fr">webmaster</a></li>
+      <li><a href="http://validator.w3.org/">xhtml valid</a></li>
+      <li><a href="http://jigsaw.w3.org/css-validator/">CSS valid</a></li>
+    </ul>
+  </div>
+</div><!-- /footer -->
+
+</body>
+</html>
+

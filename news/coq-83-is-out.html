@@ -1,0 +1,135 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+
+<head>
+  <title>Coq 8.3 is out ! | The Coq Proof Assistant</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <link rel="shortcut icon" href="/files/coq_favicon.ico" type="image/x-icon" />
+  <link type="text/css" rel="stylesheet" media="all" href="/styles/barron/style.css" />
+  
+</head>
+
+<body>
+  <div id="container">
+
+    <div id="header">
+      <div id="nav">
+        <ul class="links">
+          <li><a href="/">Home</a></li>
+          <li><a href="/about-coq">About Coq</a></li>
+          <li><a href="/download">Get Coq</a></li>
+          <li><a href="/documentation">Documentation</a></li>
+          <li><a href="/community">Community</a></li>
+          <li><a href="/consortium">Consortium</a></li>
+          <li><a href="/news">News</a></li>
+        </ul>
+      </div><!-- /nav -->
+      <a href="https://github.com/coq/coq">
+          <img style="position: absolute; top: 0; right: 0; border: 0;"
+               src="/files/forkme.png"
+               alt="Fork me on GitHub" />
+      </a>
+      <div id="logo-wrapper">
+        <div id="logo">
+          <a href="/" title="Home"><img src="/files/barron_logo.png" alt="Home" /></a>
+        </div>
+        <h1 class="site-name"><a href="/" title="Home">The Coq Proof Assistant</a></h1>
+      </div><!-- /logo-wrapper-->
+    </div><!-- /header-->
+
+<div id="content">
+<div class="breadcrumb">
+
+<a href="/">Home</a>
+</div>
+<h2 class="page-title">Coq 8.3 is out !</h2>
+<div class="node">
+
+  <span class="submitted">Submitted by coq-www on 14 Oct 2010 16:45 GMT</span>
+
+
+<div class="content">
+
+
+
+
+<p>We are pleased to announce the final release of <a href="/download">Coq 8.3</a> which includes a new tactic (<code>nsatz</code>, standing for Hilbert's NullStellensatz, that extends <code>ring</code> to systems of polynomial equations) and a few new libraries (a certification of mergesort, a new library of finite sets with computational and logical contents separated).</p>
+<p>This version also comes with many improvements of existing features, especially regarding the tactics, the module system, extraction, the type classes, the program command, libraries, coqdoc. Here is an excerpt:</p>
+<ul>
+<li>new operator <code>&lt;+</code> for conveniently chaining application of functors</li>
+<li>new round of extension of the modular library of arithmetic</li>
+<li>support for matching terms with binders in Ltac,</li>
+<li>linking notations in coqdoc,</li>
+<li>quote tactic now working on arbitrary expressions,</li>
+<li><code>Lemma</code> and co accept parameters that are automatically introduced,</li>
+<li>interactive proofs in module types,</li>
+<li>a beautifying coqc option for pretty-printing files</li>
+</ul>
+<p>See the file <a href="/distrib/V8.3/CHANGES">CHANGES</a> for a full log of changes.</p>
+<p>Even if we try to preserve compatibility as much as possible with Coq 8.2, we had to arbitrate for a break of behavior in some situations. The major incompatibilities can be easily treated by using the new <code>-compat 8.2</code> option or by setting/unsetting adequate options. See <a href="/distrib/V8.3/COMPATIBILITY">COMPATIBILITY</a> for details and migration recommendations.</p>
+<p>In addition to the "ssreflect" plugin, extension packages we are aware about include the following (but probably there are more):</p>
+<ul>
+<li>the <code>Heq</code> library for smooth rewriting using heterogeneous equality by C.-K. Hur;</li>
+<li>the <code>aac_tactics</code> plugin for rewriting modulo associativity and commutativity by T. Braibant and D. Pous.</li>
+</ul>
+<p>Note also the following user contributions submitted since 8.2 was released:</p>
+<ul>
+<li>Projective geometry in plane and space (N. Magaud, J. Narboux, P. Schreck)</li>
+<li>Proofs of Quicksort's worst- and average-case complexity (Eelis)</li>
+<li>Tactic that helps to prove inductive lemmas by fixpoint "descente infinie" functions (M. Li)</li>
+<li>A tactic for deciding Kleene algebras (T. Braibant and D. Pous)</li>
+</ul>
+<p>If you want to try it, go to the <a href="/download">download</a> page.</p>
+<p>The Coq development team</p>
+
+
+
+</div><!-- /content -->
+</div><!-- /node -->
+</div><!-- /content -->
+<div id="sidebar-wrapper">
+  <div id="sidebar">
+    <div id="block-aggregator-feed-1" class="clear-block block block-aggregator">
+      <h2 class="title">Recent news</h2>
+      <div class="content">
+        <div class="item-list">
+          <ul>
+<li><a href="/news/coq-890-is-out.html">Coq 8.9.0 is out</a></li>
+<li><a href="/news/coq-89beta1-is-out.html">Coq 8.9+beta1 is out</a></li>
+<li><a href="/news/coq-882-is-out.html">Coq 8.8.2 is out</a></li>
+
+          </ul>
+        </div>
+        <div class="more-link">
+          <a href="/news">more</a>
+        </div>
+      </div>
+    </div>
+    <div id="block-block-3" class="clear-block block block-block">
+      <div class="content">
+        <a href="/rss.xml">
+          <img src="/files/feed.png" alt="Syndicate content"
+          title="Syndicate content" width="16" height="16"
+          style="position:relative; top:5px" />&nbsp; Syndicate
+        </a>
+      </div>
+    </div>
+  </div><!-- /sidebar -->
+</div><!-- /sidebar-wrapper -->
+
+</div><!-- /container -->
+
+<div id="footer">
+  <div id="nav-footer">
+    <ul class="links-menu-footer">
+      <li><a href="mailto:coq-www@NOSPAM@inria.fr">webmaster</a></li>
+      <li><a href="http://validator.w3.org/">xhtml valid</a></li>
+      <li><a href="http://jigsaw.w3.org/css-validator/">CSS valid</a></li>
+    </ul>
+  </div>
+</div><!-- /footer -->
+
+</body>
+</html>
+
