@@ -32,7 +32,7 @@ $(PP): $(PP).ml
 
 ## We generate html pages from all .html files in pages
 
-PAGES:= $(shell find pages -name *.html)
+PAGES:= $(shell find pages -type f)
 PAGESDST:=$(patsubst pages/%,$(DST)/%, $(PAGES))
 
 pages: $(PAGESDST)
